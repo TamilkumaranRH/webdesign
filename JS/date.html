@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Date and Time Example</title>
+</head>
+<body>
+
+  <script>
+    // Create a new Date object
+    var currentDate = new Date();
+
+    // Get individual components of the date and time
+    var year = currentDate.getFullYear();
+    var month = currentDate.getMonth() +1; // Month is zero-based, so we add 1
+    var day = currentDate.getDate();
+    var hours = currentDate.getHours();
+    var minutes = currentDate.getMinutes();
+    var seconds = currentDate.getSeconds();
+
+    // Format the date and time
+    var formattedDateTime = `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+
+    // Display the result
+    console.log("Current Date and Time: " + formattedDateTime);
+
+    // You can also display it in the HTML document
+    var outputElement = document.createElement('p');
+    outputElement.textContent = "Current Date and Time: " + formattedDateTime;
+    document.body.appendChild(outputElement);
+  </script>
+</body>
+</html>

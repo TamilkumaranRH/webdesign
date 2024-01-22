@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>design</title>
+    <style>
+        body{
+            background-image: url("bike.jpg");
+            background-position:200px;
+            background-repeat: no-repeat;
+            background-size:cover;
+            padding-bottom:100px;
+
+        }
+        .div{
+          
+            display: inline;
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+            text-transform: uppercase;
+            width: 30px;
+            height: 30px;
+        }
+        .t{
+            font-size: 50px;
+            font-style: bold;
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase;
+        }
+        #k{
+            font-size: large;
+           border-color: crimson;
+           border-radius:10px 10px;
+           border-style: double;
+           border-width: thick;
+        }
+
+        main{
+            padding-right: 50px;
+            flex-grow:3;
+           display: flex;
+           flex-flow:column nowrap;
+           justify-content: left;
+           align-items: last baseline;
+           gap: 1rem;
+           font-size: 20px;
+           color: blue;
+        }
+        a:hover{
+            color: orangered;
+        }
+        .animate{
+          animation:5s ease-in-out 3s 1 normal forwards slide;
+        } 
+       @keyframes slide{
+        0%{
+            transform: translatex(0);
+        }
+        55%{
+            transform: translatex(-200px)rotate(-180deg);
+        }
+        100%{
+            transform: translatex(0)
+        }
+       }
+    </style>
+</head>
+<body>
+    <div class="div">
+        <a href="#">models</a>
+        <a href="#">KTM pro-xp</a>
+        <a href="#">KTM app</a>
+        <a href="#">location as</a>
+        <a href="#">association</a>
+    </div>
+    <main>
+        <div class="word animate">enqiure now</div><br><br>
+        <div class="word animate">virtual showroom</div><br><br>
+        <div class="word animate">book test ride</div><br><br>
+    </main>
+    <div class="t">
+        <p> <strong>ktm200 duke</strong></p> 
+         <p> <strong> LED headlamps</strong></p>
+    </div>
+    <span id="k">
+        <a href="#">book</a>
+        <a href="#">visit-showroom</a>
+    </span>
+</body>
+</html>

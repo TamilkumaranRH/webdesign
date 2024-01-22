@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>word</title>
+    <style>
+        body{
+            background-color: yellow;
+             background-position: 20px;
+             background-repeat: no-repeat;
+             background-attachment: fixed;
+             background-size: cover;
+             align-items: center;
+        }
+        main{
+            font-size:50px;
+           flex-grow:3;
+           display: flex;
+           flex-flow:column nowrap;
+           justify-content: center;
+           align-items: center;
+           gap: 1rem;
+           font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            display:grid;
+            place-content: center;
+        }
+        .animate{
+          animation:5s ease-in-out 3s 1 normal forwards slide;
+        } 
+       @keyframes slide{
+        0%{
+            transform: translatex(0);
+        }
+        55%{
+            transform: translatex(500px)rotate(360deg);
+        }
+        88%{
+            transform: translateX(-500px)rotate(-360deg);
+        }
+        100%{
+            transform: translatex(0)
+        }
+       }
+    </style>
+</head>
+    <body>
+        <main>
+            <div class="word animate">Tamilkumaran</div>
+            <div class="word animate">python</div>
+        </main>
+    </body>
+    </html>

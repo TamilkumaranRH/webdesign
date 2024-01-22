@@ -1,0 +1,14 @@
+*{   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    
+}
+
+body{
+    background-image: url(/image/clg\ \(3\).jpg);
+    background-position: 20px;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+
+}

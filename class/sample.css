@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:yellowgreen;
+    justify-content: center;
+    align-items: center;
+}
+main{
+   transition: 2s;
+}
+h1{
+    font-size: 40px;
+    color: cadetblue;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width,initial-scale="1.0">
+      <title>border</title>
+      <style>
+        body{
+           background-image: url("0x0.webp");
+           background-position: 20px;
+           background-repeat: no-repeat;
+           background-attachment: fixed;
+           background-size: cover;
+           
+        }
+        #t{
+           background-color: rgba(169, 169, 169, 0.301);
+           width: 80vw;
+           height:80vh;
+          margin-left: center;
+          margin-top: 100px;
+          padding: 300px;
+          border-style: double;
+          border-color: aqua;
+          border-width: thick;
+          text-transform: uppercase; 
+           
+        }
+
+        a:link{
+    color: brown;
+ }
+ a:visited{
+    color:aquamarine;
+ }
+ a:hover{
+    color:greenyellow;
+ }
+ a:active{
+    color:orange;
+ }
+      </style>
+</head>
+<body>
+    <a href="newform1.html">click here</a>
+  <div id="t">
+    <h1>register form</h1>
+    <table>
+    <tr>
+        <td><label for="fname" >firstname:</label></td>
+        <td><input type="text" placeholder="firstname"></input></td><br><br>
+    </tr>
+    <tr>
+        <td><label for="lname">lastname:</label></td>
+        <td><input type="text"  placeholder="lastname"></input></td><br><br>
+     </tr>
+     <tr>
+        <td><label for="class" >class:</label></td>&nbsp&nbsp
+        <td><input type="text" placeholder="class"></input></td><br><br>
+     </tr>
+     <tr>
+        <td><label for="reg.no">reg.no:</label></td>
+        <td><input type="text"  placeholder="reg.no"></input></td><br><br>
+     </tr>
+     <tr>
+        <td><label for="city" >city:</label></td>
+        <td><input type="text" placeholder="city"></input></td><br><br>
+    </tr>
+    <tr>
+        <td><label for="state" >state:</label></td>
+        <td><input type="text" placeholder="state"></input></td><br><br>
+    </tr>
+    <tr>
+        <td><label for="pin">pin code:</label></td>
+        <td><input type="text"  placeholder="pincode"></input></td><br><br>
+    </tr></table>
+     <form action="#">
+        <h5>department</h5>
+        <input type="radio" id="bsc.cs" name="fav_language" value="bsc.cs">
+        <label for="bsc.cs">BSC.CS</label><br>
+        <input type="radio" id="bca" name="fav_language" value="bca">
+        <label for="bca">BCA</label><br><br>
+
+        <label for="course"> Availabel course:</label><br>
+        <select id="course" name="course">
+             <option value="python">Python</option>
+             <option value="java">Java</option>
+             <option value="c++">C++</option>     
+        </select>
+
+        <label for="message">Your message</label>
+        <p>
+          <textarea name="message" id="message" cols="20" rows="5" placeholder="text your message">
+          </textarea>
+        </p>
+        <input type="submit">
+     </form>
+  </div>
+
+   <h1>login form</h1>
+   <div class="p">
+   <a href="#">home</a>
+   <a href="#">About</a>
+   <a href="#">gallary</a>
+   <a href="#">contact as</a>
+   <div id="y">
+   <tr>
+      <td><label for="email">email:</label></td>
+      <td><input type="text" placeholder="email"></input></td>
+      <td><label for="password">password:</label></td>
+      <td><input type="text" required></input></td>
+   </tr>
+  </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>script</title>
+    <style>
+        body{
+            background-image: url("download.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin-top: 500px;
+        }
+        .t{
+            justify-content: center;
+            align-items: center;
+            place-content: center;
+        }
+        ul li{
+            font-size: 70px;
+            font-weight: bold;
+            color: mediumaquamarine;
+            margin-left: 200px;
+           
+        }
+        ul:hover li{
+            transform: rotateX(45deg);
+            animation: move 1.2s linear infinite;
+            opacity: 0;
+            
+
+        }
+    </style>
+</head>
+<body>
+    <script>
+    let myvar="Tamilkumaran"
+    console.log("my string length is"+myvar.length) 
+    console.log(myvar.toUpperCase())
+    console.log(myvar.slice(5,8))
+    console.log(myvar.includes("z"))
+    console.log(myvar.split(""))
+
+    let variables="22.34";
+    const mynum=12;
+    const myfloat=50.1;
+    console.log(mynum)
+    console.log(Number(variables))
+    console.log(Number.isInteger(myfloat))
+    console.log(Number.parseFloat(variables))
+    console.log(Number.isNaN(12))
+    console.log(isNaN("tamil"))
+    console.log(Math.floor(Math.random()*10)+2)
+    console.log(Math.round())
+    </script>
+   <div class="t">
+    <ul>
+        <li>home</li>
+    </ul>
+   </div>
+</body>
+</html>

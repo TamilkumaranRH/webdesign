@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>My Web Page</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Karthi">
+		<!--meta data is used to search engine to search the particular things-->
+		<link rel="icon" href="images/gold.png" type="image/x-icon">
+	</head>
+	<body>
+		<header>
+		<!--shift+alt+down arrow = use to copy the content to down-->
+
+		<section id="ch1">
+		<h1>Hi Guys</h1>
+			<hr>
+			<nav>
+				<ul>
+					<li><a href="#ch1"> chapter 1</a></li>
+					<li><a href="#ch2">chapter 2</a></li>
+				</ul>
+			</nav>
+			<hr>
+		</section>
+		</header>
+		<main>
+			<ASIDE>
+				<details>
+					<summary>
+						Do you touch and see something
+					</summary>
+					<time datetime="08:00">8 am</time>
+					this is the suprisse message
+				</details>
+			</ASIDE>
+			<h2>hi</h2>
+		<p>hello</p>
+		this HTML <em> hello <Strong>world!!!</Strong></em><br>
+		<figure>
+		<img src="images/gold.png" alt="" width="50" height="50" title="gold" loading="lazy">
+		<figcaption>Gold coin</figcaption>
+		</figure>
+		<hr>
+		<h6>Hi Guys</h6>
+		<p>hello</p>
+		hello <br> world!!! <br>&lt;&copy;&gt;
+		This is Karthikeyan&nbsp;&nbsp; from <address> sivagnagai. </address>
+		<abbr title="Mozilla Developer Network">MDN</abbr>
+
+		<ol><!--Order List-->
+			<li>HTML</li>
+			<li>css</li>
+			<li>javaSript</li>
+		</ol>
+
+		<ul><!--Unorder List-->
+			<li>React javaSript</li>
+			<li>Block Chain</li>
+			<Li>AI</Li>
+		</ul>
+
+		<dl><!--Description List dt=term  dd=detail-->
+			<dt>html</dt><dd>HyperText</dd>
+			<dt>css</dt><dd>Sytle</dd>
+		</dl>
+
+		<a href="www.google.com">Google</a><!--anchor tag-->
+	
+	<hr>
+	<article id="contact">
+		<h2>contact</h2>
+		<form action="https://httpbin.org/get" method="get">
+			<fieldset>
+					<legend>Personal Info</legend>
+				<p>
+					<label for="firstName">First Name:</label>
+					<input type="text" name="firstName" id="firstName" placeholder="FirstName" autocomplete="on" required>
+				</p>
+				<p>
+					<label for="LastName">Last Name:</label>
+					<input type="text" name="LastName" id="LastName" placeholder="LastName" autocomplete="on" required>
+				</p>
+				<p>
+					<label for="Password">Password:</label>
+					<input type="password" name="Password" id="Password" placeholder="ur password" required>
+				</p>
+				<p>
+					<label for="fav decade">fav decade:</label>
+					<input type="number" name="fav decade" id="fav decade" min="1950" max="2020" value="1980" step="10" required>
+				</p>
+				<p>
+					<label for="phone">phone:</label>
+					<input type="tel" name="phone" id="phone" placeholder="919999999999" required pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+				</p>
+			</fieldset>
+			<fieldset>
+				<legend>Code information</legend>
+				<p>
+					<label for="Code">Code:</label>
+					<select name="Code" id="Code">
+						<optgroup label="script">
+							<option value="html">HTML</option>
+							<option value="css">CSS</option>
+							<option value="js">JavaScript</option>
+						</optgroup>
+						<optgroup label="coding">
+							<option value="java" selected>Java</option>
+							<option value="python">python</option>
+						</optgroup>
+					</select>
+				</p>
+				<p>
+					<label for="Code">Code multiple:</label>
+					<select name="Code" id="Code" multiple size="5">
+						<optgroup label="script">
+							<option value="html">HTML</option>
+							<option value="css">CSS</option>
+							<option value="js">JavaScript</option>
+						</optgroup>
+						<optgroup label="coding">
+							<option value="java" selected>Java</option>
+							<option value="python">python</option>
+						</optgroup>
+					</select>
+				</p>
+				<p>
+					<label for="Code">Code easy:</label>
+					<input type="text" name="content" id="content" list="content-list">
+					<datalist id="content-list" >
+							<option value="html">
+							<option value="css">
+							<option value="js">
+							<option value="java">
+							<option value="python">
+					
+					</select> 
+				</p>
+		</fieldset>
+		<fieldset>
+			<legend>fav City radio</legend>
+			<p><input type="radio" name="city" id="madurai" value="madurai"><label for="madurai">Madurai</label></p>
+			<p><input type="radio" name="city" id="sivagnagai" value="sivagnagai"><label for="sivagnagai">sivagnagai</label></p>
+			<p><input type="radio" name="city" id="Karaikudi" value="Karaikudi"><label for="Karaikudi">Karaikudi</label></p>
+		</fieldset>
+		<fieldset>
+			<legend>fav City checkbox</legend>
+			<p><input type="checkbox" name="city" id="madurai" value="madurai"><label for="madurai">Madurai</label></p>
+			<p><input type="checkbox" name="city" id="sivagnagai" value="sivagnagai"><label for="sivagnagai">sivagnagai</label></p>
+			<p><input type="checkbox" name="city" id="Karaikudi" value="Karaikudi"><label for="Karaikudi">Karaikudi</label></p>
+		</fieldset>
+		<fieldset>
+			<legend>Send me a Note</legend>
+			<label for="message">Your Message</label>
+			<p>
+				<textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message"></textarea>
+			</p>
+		</fieldset>
+		<button type="submit">SUBMIT</button>
+		<button type="submit" formaction="https://httpbin.org/post" formmethod="post">POST</button>
+		<button type="reset">RESET</button>
+		</form>
+	</article>
+	<hr>
+	<section id="ch2">
+		<table>
+			<caption>this is my table</caption>
+			<thead><tr>
+				<th>&nbsp;</th>
+				<th>1st row</th>
+				<th>2nd row</th></tr>
+			</thead>
+			<tbody>	
+				<tr><th>time</th><td>21</td><td>21</td></tr>
+				<tr><th>time</th><td>21</td><td>21</td></tr>
+				<tr><th>time</th><td rowspan="2">21</td><td >21</td></tr>
+				<tr><th>time</th><td>21</td></tr>
+			</tbody>
+			<tfoot>
+				<tr>
+				<td colspan="3">this is footer</td></tr>
+			</tfoot>
+		</table>
+	</section>
+</main>
+<hr>
+<footer>
+	&copy;
+	
+	<a href="#">Back to top</a>
+</footer>
+	</body>
+</html>
